@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeperInterface, figure 10</title>
+<style>html,body{margin:0;height:100%;background:#fff;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}
+#hint{position:absolute;left:8px;bottom:6px;font:12px sans-serif;color:#888;pointer-events:none}</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head><body><div id="hint">drag to rotate, right drag to pan, wheel to zoom, double click to reset</div>
+<script id="scene" type="application/json">{"items":[{"kind":"mesh","V":"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","T":"eJxNl4d3FUUYR5cakEiVGkKTIgSIBgQB6QiCEiAYxNATpAjSWwAhFKUIgooSahACioCYUEVqlCD/ld89e985vHN+596dmX1v387szGxWkiRNIk0jWbKxDhOdT0MdNtJhAx0202HzSIvIa5FsHb6uw5Y6bBVpE2kdaavDdpEOkTci7XXYUYedddgpkhvpEsnRYVcddtdht0iPSM9ILx321uGbkX6RPpG3dDhAh3nW94301/vb7p3IwMggHQ7W4RAdDrWe9vk6fFsOtG2+LIi8G3kvMkKHIy3jeJgOh+twlA7f1+HoyLjImMh4fbz3aJzsocMJth3rfR8jc/Vcz/8wMiUyWYcTdThVh9OStP+nWtdWTtLhBzr8SIeMmY+TdOy10OF0HRZGZiTpuOqgwwY6ZHwzNhmrM3X4iQ6LLSuKzNbhLB3O0ed4zjjv2TwdfqrDBTpcGJkb+SxSopfYbq6cp8P5kc8jiyJLdLhUh8t0uFKHX3jeYs8pi5R6XCYX6Ys8r0wu1+GKyOrIqsiXOlyjw7XWc5ytZ9tnqyR9tSGyPrJJh5st2xhZp8Mt+hbb8TuMp2k63KbDrTos18u9Np6vMfZDvlyoQ57HsbbJ12GBDrcn6dhkrO7Q4Wgd8rztTNJ5rL0Ov4rsjeyL7NdhhQ536bvsu72SvtxteYUO9yTpXNjFa8yR23X4dZKOi28iB/WDfvcyudIy2hzQ4WEdHop8Gzka+U6Hg3XI3MYYP2LZApkpH+R9XiAXWn/E72U8MBaO6/CYfsz7tUFyH3+MfB85qcNTOjxtPccndPiDDn/S4c86rNQr/d4zSTq21+qwXIdnk3S8r7YsW87UIfNOkX5GP+O5RfJckq5PVZHzOpynwwk67GH9hSSdK85L2v3icZX15y27IMt0uEKHFyOX7N+j9g99xtxUbd1RPVNfLTNtYIl9+Gvkin7F/jguT+un7eMTll/R4eXIb0m6XkzW4VUdFupwug5/T9LndaJlk2SmHPIMX49cS9Jn4LpcpsOl1nN8Q4d/6PCm5117xSHPUk3kT+97jazSq+zPGtnbetqX6qX2E+s/e4EBOmRPMszjjMP+Orylw9okHe+M/zs6vJ2kH/aKc3Q4y76hj07p8K4OK3S437J7STpH3ZUVXjv7mVY6bKnDYr3Y6xkp7+gwT8/z/9/1ek7qsFKHTXXYRG/i9bHOsO7c1+FfOnygw7+TdI/Gnm6bDqfpkP0Ne17m3e06LNALbNtaZtrDzN6HNWSUDh/qkP0Qay9r6lUdTtbhFOtZbwv1Qtt193/d1+EhHR7WIXvpR0m6F5mvwws6vKjD5jps5v9i3/9Yh111mKPneL+eRp4k6TP/VGbmDsr76LCfDi9b9sTz+kj27nWRZ0m6P66Tw3RYq9fav3Xygf+J+XC5Dv/RYZae5X9mn7LO87fIWh3y7LEXYI86Q4f/6vC5DtkzsIdnjpquwxY6bKXDETr7kB36Ds8f7n14qEPGFu8o/0XqdfhCh1t1uE2HQ62n/U59p9f8QvIfmBeZJ2t02FuHvJvxDspnlg5n24f0/3EdbtbhJvv46Su+yfvdV97SIfMg7wS8Uz7SYTMd8p7APos9MHuv5fouHe7WIeOAvQ9r5SUdvtRfen8HyyHWV1t303vRS4c9dch71gGPMw5zddhNh4f93np/j3fojvZNZ1mv19u2s6zWYYkOeVdhrWA9vqzDfjrM0yFzNO8brJVL9cVJup4tkTU6vKHf8BzaltqOZ4JnpJEOG+pwtg6LdMg+inmQ94U1OmSOzLLfdutwjw7v6ZB1grHPmD6rw3LLnvubL+Q5/ZztmGuZT7vq8LEO63TInMPek/X4tg6Ldcj7Jusza1mlXml9Y5lpA1m/mb8Z5530TvbtXEn/Mh888zoeysc6bKPDdjpkPeIdgveE9TrcoEP26qwzG627Lw/qkLXnfxBu00s=","C":"eJx9wk0og2EAAOCTDbPys9hBEdZqo+EkB01R4+CwiBZb+RalbU3hojg4rBAHylJbfuPDgWSatSbLz8UOy0nTDsPBPtOX/Zif5atXb2/v+83To2tT6fjGTetw6qGHe8+cwl83Cjjd4gGvC4zoTLuIt5pSkhNzQ+TY/k62zrI+MO4bA7sFj+T35Une8xXl/5+oHsaGhSdonZJCZ3LXsGFKCPbWd3LpKQk5INKDh8Wj2M/mK96G2kZYX9eU7UbpYLas7Rb7U6JBP/lysEaFBpswunh/7HXxjm1eYMdrDFgm4OKuSClubPcZy5wdk9m7BfTJTBHM2ry8rTI1aLdI0bTEDPvFJvTbhhO2ylTkhIdCT1cq4GA+DS6ltLDc1IBN9vu4bHCedzR0Dq5KO7j2ESk5ud0HupgQnHa0ovMsQfKlVkx+oV/ho6UirLlLjk5p/dyoNwK79wrRGYED/q5yk9nZg79bi+iIYAD7C3fgbsQ=","faceAlpha":1.0,"E":"eJxN1Yt7T3UcB/ATFVKuEQmRa4hQWJgRGnIby61FN5K7XHIrt6y5S8NGbK6bsYlZml20XPZf9f0+59Xz2PO8n9f7fM73d36/3zm/c5YkSdIiSf9e5LyQF0JasjW7WtuSOfocr32ZuSEv2Y62Yo3ZWbM2bPIebVinl4a8EtKWr3KWWXt+at9rXKO341y9PRfq40I6hHRkJx4068x6+zozW58Z8npIF3blHLM3uNu+bmbducusO+v0xSFvhvRgT2aavcWDem/WW9uLWXpvFugPQt4O6cN3ONmsL7P0frxtbT9e1O+E9A8ZwIEcxAb7BrPRmiG8au1gvssPzO6aDWGGXh0yNGQYh/N9s/c4gofNRvGY14zgSE40y3OskRzNbLMdjjWaz/TtPvuHHMsMszH8U/+Ij6wdxwksN8uwdjwf6hM4Vd/pO2RyErPMdphNZp59lWZLQ6aEfMxpzOYN+6Zypz7T2uks0z/hWn0G1znmDNnuGPF7xXt8Nr9P0nt8Nsv1ePx4r/2bpPf4fC5gcZI+y3KYa00OL1i7kLksNLsX8lnIEi7l5zwSsihJ79foMtaZLZErXruMf+iXHCuP8XhfhCznCn5jtoJfssrsa1bY9xWr9FUssfZbVjj2Sq7mHmu+4y/WrGKTXmrNau7T97hma7iWZWbrWWzfOlkvP4ZsCNnMrawN2RiyiZv5A/Pt28L91vxlzRZuZaPZCbP4nNmWpL/DbT5H9Kl+Pknvnfjcjb/5+DuMz/DdfKI/dg5+4s/6XjaZ7eUB3jercS73M18/IMddk0PM502zAlba96sUMJ6P+Cw8wqP6UTnGy/pl73mCRfr1kJMhv7GQZ0JOhZzm76y29jSLeM3sqrWFvKefdcz/Pcf7ehHjdrHrFHOBT/X4nIj33kVeYolZiVmpXuW7X2Gz3uyzXpPrbNAbk/QZWcZy16aClfotuc07eqX3jtvxf8Rd1jon1b5rjWv5QP6WWv6TpM/S+H+l3naDz/fIdjwnjyWepyfP+YzNevQ/n6wDtA==","edgeColor":[0.0,0.0,0.0],"edgeAlpha":0.1}],"out":[-0.8804509063256238,-0.44022545316281186,0.17609018126512477],"up":[0.1574998461916315,0.07874992309581574,0.9843740386976974],"radius":3.0}</script>
+<script type="module">
+import * as THREE from "three";
+import { TrackballControls } from "three/addons/controls/TrackballControls.js";
+THREE.ColorManagement.enabled = false;
+const S = JSON.parse(document.getElementById("scene").textContent);
+async function inflate(b64, Type) {
+  const bytes = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate"));
+  const buf = await new Response(stream).arrayBuffer();
+  return new Type(buf);
+}
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+renderer.setPixelRatio(window.devicePixelRatio);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(1, 1, 1);
+for (const it of S.items) {
+  if (it.kind === "mesh") {
+    const V = await inflate(it.V, Float32Array), T = await inflate(it.T, Uint32Array), C = await inflate(it.C, Uint8Array);
+    // a colour per triangle: every triangle its own three vertices
+    const n = T.length / 3, P = new Float32Array(9 * n), K = new Uint8Array(9 * n);
+    for (let t = 0; t < n; t++) for (let j = 0; j < 3; j++) {
+      const v = T[3 * t + j];
+      for (let k = 0; k < 3; k++) { P[9 * t + 3 * j + k] = V[3 * v + k]; K[9 * t + 3 * j + k] = C[3 * t + k]; }
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(P, 3));
+    g.setAttribute("color", new THREE.BufferAttribute(K, 3, true));
+    const translucent = it.faceAlpha < 1;
+    scene.add(new THREE.Mesh(g, new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide,
+      transparent: translucent, opacity: it.faceAlpha, depthWrite: !translucent,
+      polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 })));
+    if (it.E) {
+      const E = await inflate(it.E, Uint32Array), ge = new THREE.BufferGeometry();
+      ge.setAttribute("position", new THREE.BufferAttribute(V, 3));
+      ge.setIndex(new THREE.BufferAttribute(E, 1));
+      scene.add(new THREE.LineSegments(ge, new THREE.LineBasicMaterial({ color: new THREE.Color(...it.edgeColor),
+        transparent: it.edgeAlpha < 1, opacity: it.edgeAlpha, depthWrite: false })));
+    }
+  } else if (it.kind === "lines") {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(await inflate(it.P, Float32Array), 3));
+    g.setAttribute("color", new THREE.BufferAttribute(await inflate(it.C, Uint8Array), 3, true));
+    scene.add(new THREE.LineSegments(g, new THREE.LineBasicMaterial({ vertexColors: true, transparent: it.alpha < 1, opacity: it.alpha })));
+  } else if (it.kind === "points") {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(await inflate(it.P, Float32Array), 3));
+    g.setAttribute("color", new THREE.BufferAttribute(await inflate(it.C, Uint8Array), 3, true));
+    scene.add(new THREE.Points(g, new THREE.PointsMaterial({ vertexColors: true, size: 1.5 * it.size * window.devicePixelRatio, sizeAttenuation: false })));
+  } else if (it.kind === "slice" || it.kind === "picture") {
+    const tex = new THREE.DataTexture(await inflate(it.rgba, Uint8Array), it.w, it.h, THREE.RGBAFormat);
+    tex.magFilter = tex.minFilter = THREE.NearestFilter;
+    tex.needsUpdate = true;
+    const c = it.corners, g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(new Float32Array([...c[0], ...c[1], ...c[2], ...c[3]]), 3));
+    g.setAttribute("uv", new THREE.BufferAttribute(new Float32Array([0, 0, 1, 0, 0, 1, 1, 1]), 2));
+    g.setIndex([0, 1, 3, 0, 3, 2]);
+    const pic = it.kind === "picture";
+    if (pic) tex.magFilter = tex.minFilter = THREE.LinearFilter;
+    scene.add(new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide, transparent: pic, alphaTest: pic ? 0.05 : 0 })));
+  }
+}
+const r = S.radius, camera = new THREE.OrthographicCamera(-r, r, r, -r, -100 * r, 100 * r);
+const controls = new TrackballControls(camera, renderer.domElement);
+controls.rotateSpeed = 3;
+function home() {
+  camera.position.set(...S.out.map(x => 4 * r * x));
+  camera.up.set(...S.up);
+  camera.zoom = 1;
+  controls.target.set(0, 0, 0);
+  camera.lookAt(0, 0, 0);
+  camera.updateProjectionMatrix();
+}
+function resize() {
+  const w = window.innerWidth, h = window.innerHeight, a = w / h, s = 1.05 * r;
+  renderer.setSize(w, h, false);
+  Object.assign(camera, a > 1 ? { left: -s * a, right: s * a, top: s, bottom: -s } : { left: -s, right: s, top: s / a, bottom: -s / a });
+  camera.updateProjectionMatrix();
+  controls.handleResize();
+}
+home(); resize();
+window.addEventListener("resize", resize);
+renderer.domElement.addEventListener("dblclick", home);
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+</script></body></html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EBSD3Plotting, figure 6</title>
+<style>html,body{margin:0;height:100%;background:#fff;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}
+#hint{position:absolute;left:8px;bottom:6px;font:12px sans-serif;color:#888;pointer-events:none}</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head><body><div id="hint">drag to rotate, right drag to pan, wheel to zoom, double click to reset</div>
+<script id="scene" type="application/json">{"items":[{"kind":"slice","rgba":"eJzd2T1Ow0AQBeDckJaeQ8BFaDgGBQ01B6BBooILUKeELGKtyfi9mTfrBQKRRgLb8c7n/fXm/f3w2e3CuH7dH8Xj2eXqmD3nY3f7IsX95cMSbzfnYfTclv8HHcxi87d5zXT4/EYdUZ34/H/C8RkbHN7SykCGFndPV1McKL+Wx1ZHC1sOM9gYdaD8e4w6usWXpTiUuskcfiwZcdgc0fWZwUbWh5S6qDhYu48sLQ/VgCwsHzS2t8/yN7k+MjBHi55PxdEt0XNt1/j5yTpsKOVtcUT3o2Ora7dHdSc4snIVR9aP/DiVOXw/Uh1Vix2Xsv6HxtrfdqDvZY4e1hGt4VqojooF1cOIRTWcuqNbMsMMB7L8hmM1Th8+dr2E+l+W0/75Yolo3mPf6WHPVxyfz/LLkY0l0TNFOXUTO7fFAdt24lCikqvqYBY295yyw1oi419wsFjV0+FTvcd3OKplMsfo/U7VUb33jHzR8WysrziU8mc9c39tNv+sxjDR4aPNobMc6Fo2l9KxuOBA78+z2tWoY7mP6GD7GqfkyPLK9mhH2qTNpeqA7dM5fG7KXnPV0COylNfNxNGisme+1eH3KMtr/8Dh75NZsvG4nWMO5R1oxMHqNTOg/svKtu88zNEt6ZxcdDBLtgc06lD2l5ijarAOv9eH9il93uhYtI+pONi7rFIXyJHVhd+zV/ZhoefL4a+ZURdZ/sgR/RbEwu4z9HIiSzRWeYfPn7U59DtH1WAdkQV9L5pvUD2gOmvHtziOxkvjiN7jVUdmQP00s6B7rcZ959hqQXPWFgcbJxRHt1QdI/uPzKLMRYoDlY/2VRWH8ny9JTP4fd7Igdb7ow71GSu5w/YDHNE7ZMXg24q85hNzjxyoLSkOZX5j73UzHaxPK+sTNk+jdSvdJ5jgiOaaaM1o24jiqBpmOhSL6kCWWX3kvzg+AG9Dqyw=","w":50,"h":50,"corners":[[0.005,-0.25,-0.25],[0.005,0.25,-0.25],[0.005,-0.25,0.25],[0.005,0.25,0.25]]},{"kind":"slice","rgba":"eJzN2TFSAzEMBdDckJaeQ8BFaDgGBQ01B6BhhgouQE0ZcKGMUL6+vhxvSGbUbCa7fmtbtpX9/vez20nxfPsixevV7Z/YPX4cxf3ntxSoHd/vN0exFxzWHtVhlnhta8fXw/VRxHfadTy93dHvZw1dB7J0DBboe3v2qr6oHNGizhHviJ74/GyMdfpCdXTnO3KMyNow2o1ywUpHN29lBuZAhjimt3AwC3OM9ikOlGMsVjuyuV85omXcSzUwy6kOb1EMaOx3Dci0wuHHr+LIxulMPxyev9jBItrQXOvOC6U/lL3KrIGtlV2DOUb+7jqQacbA9i+qwTuqdVTtm+hh7a9yOFsvzuFQ5r13REu8/ypHNQdYjqkc1o5qLG/tGO3p5pi4R1Hn5aU5YlyKI7NUbT+3Q8mnM44RKOfbNXuOXV/liO+LOZSxZM/MHChWOixi/unMiXj+84bMt8LB9mDVOelSHMzgn91xREs0ZJbsPtn+ytbWyoCeT+cjyTuVgT2T7XcVC3qH3X5Bnu67q84fY9xn983qTqc6ugbFoczHcztQPdLqu5337etNXQeqxXUcWV3V16lnHKj2zAyoPmph9xljmRmQJdbbT3FYG7K1JDsvod9bzDrMwgzIwc4W6Kw048gs47o5qlzOHMp5z/bNXQfrE399fNR1yaKqG/j9VnZu9HW76n0o6xpzIEt1VkX732hR3wPrk2irHNGStQP9JqsHzTiqvYXiGJHVDZQ+PMWB5tMKB6qZV3OqOkv6nODHUZbfZh1onmZnJuRANSnlvLbSgXJn5qn2El0L+98LOZTczxwjlD1R18Lqvkf5A6znLFjtcAtL9KR1/oaj+p+FOXzu6TpGZP9XdR2VoXKMUP8r6bTBO7pzO7teGbZwHO6Z5CvpHYAcwwz/4fBrn9qOyjDrqMbzake0zPy+OycP9204lGczg3qPTvstfgC+Di/c","w":50,"h":50,"corners":[[-0.25,0.005,-0.25],[0.25,0.005,-0.25],[-0.25,0.005,0.25],[0.25,0.005,0.25]]},{"kind":"slice","rgba":"eJzt2DtOA0EMBuDckJaeQ4SL0HAMChpqDkCDRBUuQJ0yyEheWY4fv73eJAWWXCCxO/PtvDw5nf5Dx8/z/ZLHrwczP+72S9LftxKy7x2HzGvE2/59SdQhDZ6Fnr10/z0HMhaR4+n7+JeXNGiLZ0AdbNjCItvNLNMOyom5ptuNHJQVg3ZYBnasseg2+b2ewfq+ax167U0ZLEs0TzKHfAZxVC2RgdLr02m3O0vUhRgqjsxQcexeDqXx0WPdtVC71jfV6a0Rbag6sn0dtbx+Po442IA6kHdrTzQW5FhjkX2NLNmayiz83syBWJBzLdq/OuNNKb+PZdAOz+LNDdSAjLV3Tun+aQviyOb4lIEdOnXflj4CDkpkjkyOh7fXZw453zqOak472HJLDs8w4cjq8SlHZJhyRPckamPCl9XtlF2HV99wyvYmLVGbsn/y3sgG/f9RnWY5JiyIw2qXwnouqze7Fq+Ot+ZV1eEZuO6rOKJ1FJ2pyNqQ784caM2M5Nr9ybzXOs9KR1SLdy3dM2/pH/gcO6L68lqOynMU2W856NrrOtDaMbJkDmTcuw7026MOz4KsQ35n1VGdR1byXinDWiMVh7Z4e253PViG5Vsph65Jqo7ojMvOiYrjbMxVWPXXtMOzeL8dVQ2eI7N0HNqC/BbmrUEvUIfVXrUezPb77PyKInJkbVn99e6WqCGqi7Lw5lfWntXvaFzXONCI+mOZovskOj+js7hjQByc8i4Z3SujfaJSS1QdqGXCwYmcv93oOrQF3bu3MGQW3nsiS9Y36djS4Hl4f5JpOTJDth62Cr3PehbkG2eOS4TnsO7jqIMt14jMUHHcSnR+G5mKX4xTqE4=","w":50,"h":50,"corners":[[-0.25,-0.25,0.005],[0.25,-0.25,0.005],[-0.25,0.25,0.005],[0.25,0.25,0.005]]}],"out":[-0.8804509063256238,-0.44022545316281186,0.17609018126512477],"up":[0.1574998461916315,0.07874992309581574,0.9843740386976974],"radius":0.4330127018922193}</script>
+<script type="module">
+import * as THREE from "three";
+import { TrackballControls } from "three/addons/controls/TrackballControls.js";
+THREE.ColorManagement.enabled = false;
+const S = JSON.parse(document.getElementById("scene").textContent);
+async function inflate(b64, Type) {
+  const bytes = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate"));
+  const buf = await new Response(stream).arrayBuffer();
+  return new Type(buf);
+}
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+renderer.setPixelRatio(window.devicePixelRatio);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(1, 1, 1);
+for (const it of S.items) {
+  if (it.kind === "mesh") {
+    const V = await inflate(it.V, Float32Array), T = await inflate(it.T, Uint32Array), C = await inflate(it.C, Uint8Array);
+    // a colour per triangle: every triangle its own three vertices
+    const n = T.length / 3, P = new Float32Array(9 * n), K = new Uint8Array(9 * n);
+    for (let t = 0; t < n; t++) for (let j = 0; j < 3; j++) {
+      const v = T[3 * t + j];
+      for (let k = 0; k < 3; k++) { P[9 * t + 3 * j + k] = V[3 * v + k]; K[9 * t + 3 * j + k] = C[3 * t + k]; }
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(P, 3));
+    g.setAttribute("color", new THREE.BufferAttribute(K, 3, true));
+    const translucent = it.faceAlpha < 1;
+    scene.add(new THREE.Mesh(g, new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide,
+      transparent: translucent, opacity: it.faceAlpha, depthWrite: !translucent,
+      polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 })));
+    if (it.E) {
+      const E = await inflate(it.E, Uint32Array), ge = new THREE.BufferGeometry();
+      ge.setAttribute("position", new THREE.BufferAttribute(V, 3));
+      ge.setIndex(new THREE.BufferAttribute(E, 1));
+      scene.add(new THREE.LineSegments(ge, new THREE.LineBasicMaterial({ color: new THREE.Color(...it.edgeColor),
+        transparent: it.edgeAlpha < 1, opacity: it.edgeAlpha, depthWrite: false })));
+    }
+  } else if (it.kind === "lines") {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(await inflate(it.P, Float32Array), 3));
+    g.setAttribute("color", new THREE.BufferAttribute(await inflate(it.C, Uint8Array), 3, true));
+    scene.add(new THREE.LineSegments(g, new THREE.LineBasicMaterial({ vertexColors: true, transparent: it.alpha < 1, opacity: it.alpha })));
+  } else if (it.kind === "points") {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(await inflate(it.P, Float32Array), 3));
+    g.setAttribute("color", new THREE.BufferAttribute(await inflate(it.C, Uint8Array), 3, true));
+    scene.add(new THREE.Points(g, new THREE.PointsMaterial({ vertexColors: true, size: 1.5 * it.size * window.devicePixelRatio, sizeAttenuation: false })));
+  } else if (it.kind === "slice" || it.kind === "picture") {
+    const tex = new THREE.DataTexture(await inflate(it.rgba, Uint8Array), it.w, it.h, THREE.RGBAFormat);
+    tex.magFilter = tex.minFilter = THREE.NearestFilter;
+    tex.needsUpdate = true;
+    const c = it.corners, g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(new Float32Array([...c[0], ...c[1], ...c[2], ...c[3]]), 3));
+    g.setAttribute("uv", new THREE.BufferAttribute(new Float32Array([0, 0, 1, 0, 0, 1, 1, 1]), 2));
+    g.setIndex([0, 1, 3, 0, 3, 2]);
+    const pic = it.kind === "picture";
+    if (pic) tex.magFilter = tex.minFilter = THREE.LinearFilter;
+    scene.add(new THREE.Mesh(g, new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide, transparent: pic, alphaTest: pic ? 0.05 : 0 })));
+  }
+}
+const r = S.radius, camera = new THREE.OrthographicCamera(-r, r, r, -r, -100 * r, 100 * r);
+const controls = new TrackballControls(camera, renderer.domElement);
+controls.rotateSpeed = 3;
+function home() {
+  camera.position.set(...S.out.map(x => 4 * r * x));
+  camera.up.set(...S.up);
+  camera.zoom = 1;
+  controls.target.set(0, 0, 0);
+  camera.lookAt(0, 0, 0);
+  camera.updateProjectionMatrix();
+}
+function resize() {
+  const w = window.innerWidth, h = window.innerHeight, a = w / h, s = 1.05 * r;
+  renderer.setSize(w, h, false);
+  Object.assign(camera, a > 1 ? { left: -s * a, right: s * a, top: s, bottom: -s } : { left: -s, right: s, top: s / a, bottom: -s / a });
+  camera.updateProjectionMatrix();
+  controls.handleResize();
+}
+home(); resize();
+window.addEventListener("resize", resize);
+renderer.domElement.addEventListener("dblclick", home);
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+</script></body></html>
